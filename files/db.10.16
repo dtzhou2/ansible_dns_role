@@ -1,0 +1,13 @@
+$ORIGIN .
+$TTL 86400      ; 1 day
+16.10.in-addr.arpa      IN SOA  archimedes.servers.streisand.ovh. root.servers.streisand.ovh. (
+                                15         ; serial
+                                604800     ; refresh (1 week)
+                                86400      ; retry (1 day)
+                                2419200    ; expire (4 weeks)
+                                86400      ; minimum (1 day)
+                                )
+                        NS      archimedes.servers.streisand.ovh.
+$ORIGIN 16.16.10.in-addr.arpa.
+$TTL 86400      ; 1 day
+8                       PTR     archimedes.servers.streisand.ovh.

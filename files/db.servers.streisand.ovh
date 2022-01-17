@@ -1,0 +1,16 @@
+$ORIGIN .
+$TTL 86400      ; 1 day
+servers.streisand.ovh   IN SOA  archimedes.servers.streisand.ovh. root.servers.streisand.ovh. (
+                                17         ; serial
+                                604800     ; refresh (1 week)
+                                86400      ; retry (1 day)
+                                2419200    ; expire (4 weeks)
+                                86400      ; minimum (1 day)
+                                )
+                        NS      archimedes.servers.streisand.ovh.
+$ORIGIN servers.streisand.ovh.
+$TTL 150        ; 2 minutes 30 seconds
+10                      A       10.16.16.5
+                        TXT     "31de10242db4dd50f1fa3cd6d490862586"
+$TTL 86400      ; 1 day
+archimedes              A       10.16.16.8

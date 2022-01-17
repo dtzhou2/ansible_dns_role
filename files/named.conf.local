@@ -1,0 +1,14 @@
+include "/etc/named/ddns.key";
+
+zone "servers.streisand.ovh" {
+     type master;
+     notify no;
+     file "/etc/named/zones/db.servers.streisand.ovh";
+     allow-update { key DDNS; };
+};
+
+zone "16.10.in-addr.arpa" {
+     type master;
+     file "/etc/named/zones/db.10.16";
+     allow-update { key DDNS; };
+};
